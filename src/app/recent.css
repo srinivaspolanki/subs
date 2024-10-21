@@ -1,0 +1,40 @@
+    .recent-downloads {
+      position: fixed;
+      bottom: 0%;
+      right: 0%;
+      font-weight: bold;
+      font-size: 0.85rem;
+      width: auto;
+      height: auto;
+    }
+    @media (max-width: 1024px) {
+      .recent-downloads {
+        display: none;
+      }
+    }
+    
+    .card-header {
+      padding: 5px;
+    }
+    .card-header h2 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin: 0;
+    }
+    .card-content {
+      padding: 1rem 1rem 0rem 1rem;
+    }
+    
+    .download-item {
+      margin-bottom: 1rem;
+    }
+    .download-item h3 {
+      font-weight: 600;
+      margin: 0 0 0.25rem 0;
+    }
+    .download-item p {
+      font-size: 0.875rem;
+      color: #6b7280;
+      margin: 0;
+    }
+  

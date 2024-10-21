@@ -1,0 +1,9 @@
+
+.swapLoader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30svh;
+    box-sizing: border-box;    
+   }
+   

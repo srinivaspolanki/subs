@@ -1,0 +1,226 @@
+@font-face { font-family: 'TmonMonsori'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/TmonMonsori.woff') format('woff'); font-weight: normal; font-style: normal; }
+.inputcontainer{
+    z-index: 1;
+}
+body{
+    background-color: rgb(20, 24,28) !important;
+}
+
+
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none !important;  /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+.spinner {
+  width: 35px;
+  height: 35px;
+  display: grid;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  -webkit-mask: radial-gradient(farthest-side,#0000 40%,#ffffff 41%);
+  background: linear-gradient(0deg ,rgba(255,255,255,0.5) 50%,rgba(255,255,255,1) 0) center/3.2px 100%,
+       linear-gradient(90deg,rgba(255,255,255,0.25) 50%,rgba(255,255,255,0.75) 0) center/100% 3.2px;
+  background-repeat: no-repeat;
+  animation: spinner-d3o0rx 1s infinite steps(12);
+}
+
+.spinner::before,
+.spinner::after {
+  content: "";
+  grid-area: 1/1;
+  border-radius: 50%;
+  background: inherit;
+  opacity: 0.915;
+  transform: rotate(30deg);
+}
+
+.spinner::after {
+  opacity: 0.83;
+  transform: rotate(60deg);
+}
+
+.language-details{
+  background-color: #f1c40f;
+  color: black;
+  border: none;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 3px 12px 3px 12px;
+  margin-right: 5px;
+}
+.lang-keys span:last-child {
+  margin-right: 0px;
+}
+.dontShowIthereInMobile{
+
+  max-width: 780px;
+}
+.language-details:hover{
+  
+  cursor: pointer;
+}
+@keyframes spinner-d3o0rx {
+  100% {
+     transform: rotate(1turn);
+  }
+}
+.quote-container {
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .quote {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-align: center;
+    
+  }
+
+  
+  .movie-name {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #aaa;
+    text-align: center;
+  }
+  
+.logo{
+    z-index: 1;
+}
+.infoContainer{
+    position:  relative !important;
+}
+.sublinks:hover{
+    color:black!important;
+    background: #f1c40f !important;
+}
+.box{
+    font-size: 15PX;
+    font-family: "TmonMonsori";
+    color: #aaa;
+    margin-bottom: 10px ;
+  }
+  
+  .box span{
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    animation: bounce 0.3s ease infinite alternate;
+  }
+  @keyframes bounce{
+    100%{
+      top: 0px;
+      text-shadow: 0 1px #0c0b0b, 
+                   0 2px #1b1818, 
+                   0 3px #0c0b0b, 
+                   0 4px #0c0b0b, 
+                   0 5px #0c0b0b,
+                   0 6px #0c0b0b, 
+                   0 7px #0c0b0b, 
+                   0 8px #0c0b0b, 
+                   0 9px #0c0b0b, 
+                   0 50px 25px rgba(0, 0, 0, 0.2);
+    }
+  }
+  .box span:nth-child(2){
+    animation-delay:0.1s;
+  }
+  .box span:nth-child(3){
+    animation-delay:0.2s;
+  }
+  .box span:nth-child(4){
+    animation-delay:0.3s;
+  }
+  .box span:nth-child(5){
+    animation-delay:0.4s;
+  }
+@media (min-width: 320px) and (max-width: 768px){    /* CSS for smartphones */
+    /* CSS for smartphones */
+   .quote{
+    font-size: 1.2rem !important;
+   }
+    .subsinputbar{
+    width: 80% !important;
+        
+    }
+    .moviename{
+        font-size: 1.6rem !important;
+    }
+    .year{
+        font: 0.9rem !important;
+    }
+    .lang-keys{
+      overflow: scroll !important;
+      padding-bottom: 2px;
+    }
+    .inputcontainer{
+        left:unset;
+        padding: 2%;
+        top: 2% !important;
+        width: 100% !important;
+        justify-content: start !important;
+        align-items: unset !important;
+        transform:unset;
+        box-sizing: border-box !important;
+        z-index: 4 !important;
+
+    }
+    .notfound{
+        margin-top: -200px;
+    }
+        .backdrop{
+            background-position: center;
+        }
+       
+       
+        .logo{
+            display: none;
+        }
+        .searchbtn{
+           width: 20% !important;
+        }
+       .infoContainer{
+        gap:20px !important;
+        margin-top: -200px !important;
+        padding-left: 10px;
+        position: relative;
+        margin-left: unset !important;
+        color: white !important;
+       }
+       .moviename{
+        margin-top: 10px  !important;
+       }
+       .dontShowIthereInMobile{
+        display: none !important;
+       }
+     .ShowIthereInMobile{
+        display: block !important;
+        padding-left: 10px;
+        padding-top: 20px;
+        color: white !important;
+     }
+     .subs{
+      color: white;
+     }
+     
+     .subsinpage{
+        background: none;
+        outline: none;
+        border: none;
+        padding: 10px;
+        padding-left: 0px;
+        color: white !important;
+     }
+     .backdrop{
+      height: 45vh !important;
+     }
+     
+   
+  }

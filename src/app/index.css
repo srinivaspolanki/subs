@@ -1,0 +1,66 @@
+input:focus{
+    outline: none;
+}
+.subs{
+  text-align: start !important;
+}
+.subs{
+    display: block;
+    font-size: 16px;
+    color: white !important;
+    padding: 5px;
+    margin-top: 10px;
+    background:none;
+    border: none;
+
+} 
+
+
+.subs:hover{
+  color:black!important;
+  background: #f1c40f !important;
+}
+
+  
+
+.sublinks:hover{
+    color:black!important;
+    background: #f1c40f !important;
+}
+body{
+    background-color: rgb(20, 24,28) !important;
+}
+
+.subs:hover{
+    color: #f1c40f;
+}
+@media (min-width: 320px) and (max-width: 768px){ 
+     /* CSS for smartphones */
+     .formContainer{
+      width: 100% !important;
+      padding: 10px;
+     }
+     
+     .inputContaineron{
+      height: 40dvh !important;
+     }
+      .inputbar{
+        width: 80% !important;
+        
+      }
+      .btnf{
+        width: 20% !important;
+      }
+      .description{
+        font-size: 18px !important;
+      }
+      .random{
+        top: 5% !important;
+      }
+      .sublinks{
+        width: 100% !important;
+      }
+      .subs{
+        text-align: start !important;
+      }
+  }
